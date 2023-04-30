@@ -8,7 +8,7 @@ class KuFiladey(loader.Module):
     def hello_filadey(self,message):
         hello = 'дарова брадочки любимие'
         return (
-            f'<b>{filadey}</b>\n'
+            f'<b>{hello}</b>\n'
         )
     @loader.command(ru_doc="приветствует брадочков")
     async def ku(self, message):
