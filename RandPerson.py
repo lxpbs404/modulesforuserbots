@@ -12,7 +12,7 @@ class RandomPerson(loader.Module):
         return (
             '<b>Кто ты из чата Филадея?<b>\n'
             '\n'
-            f'<i>Ты<i> <m>{rand.choice(persones)}</m>'
+            f'<i>Ты <m>{rand.choice(persones)}<m></i>'
         )
     @loader.command()
     async def randperson(self, message):
