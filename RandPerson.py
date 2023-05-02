@@ -16,4 +16,4 @@ class RandomPerson(loader.Module):
             '\n'
             f'<b>Ты {rand.choice(persones)}</b>'
         )
-        await utils.answer(message, self.randmeme_core(message))
+        await utils.answer(message, self.randmeme(message))
