@@ -13,6 +13,6 @@ class GayChance(loader.Module):
             f'<i>Шанс того что ты гей:</i> <b>{rand.choice(randomint_core)}</b>'
         )
     @loader.command()
-    async def randomint(self, message):
+    async def gaychance(self, message):
         """- напиши чтобы узнать насколько процентов ты гей"""
         await utils.answer(message, self.gaychance_core(message))
