@@ -9,8 +9,8 @@ class RandomInteger(loader.Module):
     def rdint_core(self, message):
         Random = message.message.split(" ")
         #try:
-            Integers = rd.randint(int(Random[1]), int(Random[2]))
-            return (
+        Integers = rd.randint(int(Random[1]), int(Random[2]))
+        return (
                 f'<i>Рандомное число:</i> <b>{Integers}</b>'
             )
        """ except:
