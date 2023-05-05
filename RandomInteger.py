@@ -8,16 +8,16 @@ class RandomInteger(loader.Module):
     }
     def rdint_core(self, message):
         Random = message.message.split(" ")
-        try:
+        #try:
             Integers = rd.randint(int(Random[1]), int(Random[2]))
             return (
                 f'<i>Рандомное число:</i> <b>{Integers}</b>'
             )
-        except:
+       """ except:
             return (
-                f'<i>Введите параметр</i>'
-            )            
+                f'<i>Введите парамет"""
+
     @loader.command()
     async def rdint(self, message):
         """- Выводит рандомное число (параметры)"""
-        await utils.answer(message, self.rdint_core(message))
+        await utils.answer(message, self.rdint_core(messag
