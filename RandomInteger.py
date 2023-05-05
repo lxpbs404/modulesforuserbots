@@ -9,9 +9,16 @@ class RandomInteger(loader.Module):
     def rdint_core(self, message):
         Random = message.message.split(" ")
         Integers = rd.randint(int(Random[1]), int(Random[2]))
-        return (
+        try:
+            return (
             f'<i>Рандомное число:</i> <b>{Integers}</b>'
-        )
+            )
+        expect:
+            return (
+
+            f'<i>Введите параметры</i>'
+
+            )
     @loader.command()
     async def rdint(self, message):
         """<1-ый параметр> <2-ой параметр> - Выводит рандомное число (параметры)"""
