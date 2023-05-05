@@ -14,5 +14,5 @@ class RandomInteger(loader.Module):
         )
     @loader.command()
     async def rdint(self, message):
-        """- Выводит рандомное число (параметры)"""
+        """<1-ый параметр> <2-ой параметр> - Выводит рандомное число (параметры)"""
         await utils.answer(message, self.rdint_core(message))
